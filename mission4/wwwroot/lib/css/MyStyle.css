@@ -1,11 +1,14 @@
-﻿body {
+﻿/*change font of the website*/
+body {
     font-family:'Book Antiqua'
 }
 
+/*Change my name color to darkgreen*/
 h1{
     color: darkgreen;
 }
 
+/*Center a lot of stuff by having them add the class center*/
 .center {
     margin: auto;
     display: flex;

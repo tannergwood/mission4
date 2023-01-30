@@ -8,6 +8,7 @@
     var intexGrade = $("#intex").val() * .1
     var finalGrade = Math.round(asgGrade + gpGrade + qGrade + midGrade + finGrade + intexGrade);
 
+    //Determine letter grade based off of the finalgrade average
     if (finalGrade >= 94) {
         finalGrade = "Final Grade: " + finalGrade + " A";
     }
@@ -49,6 +50,7 @@
     $("#grade").text(finalGrade);
 
     //If you wanted to make inputs go back to 0 after the end, then uncomment this code
+
     //$("#assignment").val(0)
     //$("#groupproject").val(0)
     //$("#quiz").val(0)
