@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--CSS Using Bootstrap-->
+    <link href="lib/bootstrap/css/styles.css" rel="stylesheet" />
+    <!--My CSS Page-->
+    <link href="lib/css/MyStyle.css" rel="stylesheet" />
+    <!--Changing the picture on the browser tab-->
+    <link rel="icon" type="image/x-icon" href="img/myface.jpg" />
+    <!--Title of website-->
+    <title>Tanner's Website</title>
+
+</head>
+<body>
+    <div class="center">
+        <!--Header with my name-->
+        <h1>Tanner Greenwood</h1>
+    </div><br />
+    <!--Picture of what I like to do-->
+    <div class="center">
+         <img width="25%" height="25%" src="img/tannerdeadlift.png" />
+    </div>
+    <br /><br />
+
+    <!--Paragragh on what I hope to get out of IS 413-->
+    <h3 class="center">What I hope to get out of IS 413</h3>
+    <div class="center" width="50%">
+        <p>
+            I hope to learn how to code in C# and as well become proficient in making web applications.
+            I had learned how to make them earlier in Python/Django, but I would like for it to be much more second
+            nature. I hope to learn about how to implement much more into my web applications, like APIs, things to
+            make purchasing possible in a web application, how to implement signing into and creating accounts and ensuring
+            the security of that information. I also hope to become much more proficient in the more complex logic of
+            coding and web development.
+        </p>
+    </div>
+    <!--Top 3 Jobs-->
+    <h3 class="center">My Top 3 Jobs After Graduation:</h3>
+    <ol>
+        <li class="center">Software Engineer</li>
+        <li class="center">Data Analyst</li>
+        <li class="center">Systems Analyst</li>
+    </ol>
+
+    <!--Grade Calculator-->
+    <div class="center">
+        <fieldset>
+            <legend class="center">Grade Calculator</legend>
+            <form>
+                <br />
+                <label for="assignment">Assignments</label>
+                <input id="assignment" type="number" name="name" value="" /><br /><br />
+                <label for="groupproject">Group Projects</label>
+                <input id="groupproject" type="number" name="name" value="" /><br /><br />
+                <label for="quiz">Quizzes</label>
+                <input id="quiz" type="number" name="name" value="" /><br /><br />
+                <label for="midterm">Midterm Exam</label>
+                <input id="midterm" type="number" name="name" value="" /><br /><br />
+                <label for="final">Final Exam</label>
+                <input id="final" type="number" name="name" value="" /><br /><br />
+                <label for="intex">INTEX</label>
+                <input id="intex" type="number" name="name" value="" /><br /><br />
+                <input class="center" id="calculate" type="button" value="Calculate" />
+                <!--<input id="grade" value="">-->
+            </form>
+            <br />
+            <h4 class="center "id="grade"></h4><br /><br />
+        </fieldset>
+    </div>
+    <!--Bootstrap js-->
+    <script src="lib/bootstrap/js/scripts.js"></script>
+    <!--Jquery and my js code-->
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/gradeCalc.js"></script>
+</body>
+<footer class="center">
+    <p>Made by Tanner Greenwood</p>
+</footer>
+</html>

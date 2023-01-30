@@ -1,0 +1,14 @@
+﻿body {
+    font-family:'Book Antiqua'
+}
+
+h1{
+    color: darkgreen;
+}
+
+.center {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    white-space: initial;
+}
