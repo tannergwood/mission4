@@ -4,20 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <!--CSS Using Bootstrap-->
-    <link href="lib/bootstrap/css/styles.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/styles.css" rel="stylesheet" />
     <!--My CSS Page-->
-    <link href="lib/css/MyStyle.css" rel="stylesheet" />
+    <link href="~/lib/css/MyStyle.css" rel="stylesheet" />
     <!--Changing the picture on the browser tab-->
-    <link rel="icon" type="image/x-icon" href="img/myface.jpg" />
+    <link rel="icon" type="image/x-icon" href="~/img/myface.jpg" />
     <!--Title of website-->
-    <title>@ViewBag.Title</title>
+    <title>@ViewData["Title"]</title>
 
 </head>
 <body>
     <nav>
-        <a asp-controller="mission" asp-action="Index">Home</a>
-        <a asp-controller="mission" asp-action="calculator">Grade Calculator</a>
+        <a asp-controller="Mission" asp-action="Index">Home</a>
+        <a asp-controller="Mission" asp-action="Calculator">Grade Calculator</a>
     </nav>
+    <script src="~/lib/bootstrap/js/scripts.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
     <div>
         @RenderBody()
     </div>
@@ -27,6 +29,5 @@
 <footer class="center">
     <p>Made by Tanner Greenwood</p>
 </footer>
-<script src="~/lib/bootstrap/js/scripts.js"></script>
-<script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+
 </html>

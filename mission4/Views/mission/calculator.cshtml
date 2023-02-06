@@ -2,9 +2,11 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Calculator Page";
 }
 
-@ViewBag["Title"] = "Calculator Page";
+@model CalculatorModel;
+
 
 <!--Grade Calculator-->
 <div class="center">
@@ -13,21 +15,21 @@
         <form>
             <br />
             <label for="assignment">Assignments</label>
-            <input id="assignment" type="number" name="name" value="" /><br /><br />
+            <input id="assignment" type="number" asp-for="Assignments" value="" /><br /><br />
             <label for="groupproject">Group Projects</label>
-            <input id="groupproject" type="number" name="name" value="" /><br /><br />
+            <input id="groupproject" type="number" asp-for="Groupprojects" value="" /><br /><br />
             <label for="quiz">Quizzes</label>
-            <input id="quiz" type="number" name="name" value="" /><br /><br />
+            <input id="quiz" type="number" asp-for="Quizzes" value="" /><br /><br />
             <label for="midterm">Midterm Exam</label>
-            <input id="midterm" type="number" name="name" value="" /><br /><br />
+            <input id="midterm" type="number" asp-for="Midterms" value="" /><br /><br />
             <label for="final">Final Exam</label>
-            <input id="final" type="number" name="name" value="" /><br /><br />
+            <input id="final" type="number" asp-for="Final" value="" /><br /><br />
             <label for="intex">INTEX</label>
-            <input id="intex" type="number" name="name" value="" /><br /><br />
+            <input id="intex" type="number" asp-for="Intex" value="" /><br /><br />
             <input class="center" id="calculate" type="button" value="Calculate" />
-            <!--<input id="grade" value="">-->
         </form>
         <br />
+        <div asp-validation-summary="All"></div>
         <h4 class="center " id="grade"></h4><br /><br />
     </fieldset>
 </div>

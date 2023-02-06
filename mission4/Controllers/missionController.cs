@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using mission4.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,13 @@ namespace mission4.Controllers
         {
             return View();
         }
+        //In this thing you'll put the name of the view/.cshtml page and then youre golden
+        public IActionResult Calculator()
+        {
+            return View();
+        }
 
-        public IActionResult Mission()
+        public IActionResult Calculator(CalculatorModel calculate)
         {
             return View();
         }
