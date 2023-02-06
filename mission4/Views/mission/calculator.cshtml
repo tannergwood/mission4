@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@ViewBag["Title"] = "Calculator Page";
+
+<!--Grade Calculator-->
+<div class="center">
+    <fieldset>
+        <legend class="center">Grade Calculator</legend>
+        <form>
+            <br />
+            <label for="assignment">Assignments</label>
+            <input id="assignment" type="number" name="name" value="" /><br /><br />
+            <label for="groupproject">Group Projects</label>
+            <input id="groupproject" type="number" name="name" value="" /><br /><br />
+            <label for="quiz">Quizzes</label>
+            <input id="quiz" type="number" name="name" value="" /><br /><br />
+            <label for="midterm">Midterm Exam</label>
+            <input id="midterm" type="number" name="name" value="" /><br /><br />
+            <label for="final">Final Exam</label>
+            <input id="final" type="number" name="name" value="" /><br /><br />
+            <label for="intex">INTEX</label>
+            <input id="intex" type="number" name="name" value="" /><br /><br />
+            <input class="center" id="calculate" type="button" value="Calculate" />
+            <!--<input id="grade" value="">-->
+        </form>
+        <br />
+        <h4 class="center " id="grade"></h4><br /><br />
+    </fieldset>
+</div>
+<!--Jquery and my js code-->
+<script src="~/js/gradeCalc.js"></script>

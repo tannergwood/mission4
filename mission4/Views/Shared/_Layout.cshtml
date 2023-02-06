@@ -1,0 +1,32 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--CSS Using Bootstrap-->
+    <link href="lib/bootstrap/css/styles.css" rel="stylesheet" />
+    <!--My CSS Page-->
+    <link href="lib/css/MyStyle.css" rel="stylesheet" />
+    <!--Changing the picture on the browser tab-->
+    <link rel="icon" type="image/x-icon" href="img/myface.jpg" />
+    <!--Title of website-->
+    <title>@ViewBag.Title</title>
+
+</head>
+<body>
+    <nav>
+        <a asp-controller="mission" asp-action="Index">Home</a>
+        <a asp-controller="mission" asp-action="calculator">Grade Calculator</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+
+<!--Footer to add readability especially when showing final grade-->
+<footer class="center">
+    <p>Made by Tanner Greenwood</p>
+</footer>
+<script src="~/lib/bootstrap/js/scripts.js"></script>
+<script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+</html>
