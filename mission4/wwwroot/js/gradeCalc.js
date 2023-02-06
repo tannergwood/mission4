@@ -44,11 +44,13 @@
     }
     else {
         finalGrade = "Final Grade: " + finalGrade + " E";
-    }
+    };
 
+    alert(finalGrade);
     //output onto the page
     $("#grade").text(finalGrade);
-    alert(finalGrade);
+
+    
     //If you wanted to make inputs go back to 0 after the end, then uncomment this code
 
     //$("#assignment").val(0)

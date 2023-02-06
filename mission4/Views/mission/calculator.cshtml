@@ -12,7 +12,7 @@
 <div class="center">
     <fieldset>
         <legend class="center">Grade Calculator</legend>
-        <form>
+        <form method="post">
             <br />
             <label for="assignment">Assignments</label>
             <input id="assignment" type="number" asp-for="Assignments" value="" /><br /><br />
@@ -26,11 +26,12 @@
             <input id="final" type="number" asp-for="Final" value="" /><br /><br />
             <label for="intex">INTEX</label>
             <input id="intex" type="number" asp-for="Intex" value="" /><br /><br />
-            <input class="center" id="calculate" type="button" value="Calculate" />
+            <input class="center" id="calculate" type="submit" value="Calculate" />
         </form>
         <br />
         <div asp-validation-summary="All"></div>
         <h4 class="center " id="grade"></h4><br /><br />
+
     </fieldset>
 </div>
 <!--Jquery and my js code-->
